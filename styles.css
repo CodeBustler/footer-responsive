@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --yellow: #f1c40f;
+  --dark: #191e24;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--dark);
+  padding: 20px 60px;
+}
+
+footer h2,
+footer h3 {
+  padding: 8px 0;
+}
+
+footer li,
+footer p {
+  color: lightgray;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+footer a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+footer li::marker {
+  color: var(--yellow);
+  content: '✓ ';
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.content-columns {
+  width: 300px;
+  list-style-position: inside;
+  margin: 5px;
+  padding: 10px;
+}
+
+/* COL-1*/
+.col-1 i {
+  color: var(--yellow);
+  margin-right: 5px;
+}
+
+.col-1 li::marker {
+  content: '';
+}
+
+/* SEARCH INPUT */
+.search-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer input {
+  border: none;
+  padding: 13px;
+  width: 100%;
+  outline: none;
+}
+
+footer input[type='email'] {
+  background-color: white;
+  color: black;
+  border-radius: 20px 0 0 20px;
+}
+
+footer input[type='button'] {
+  width: fit-content;
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+/* COL-4  */
+.col-4-content p,
+.search-input {
+  margin-bottom: 12px;
+}
+
+/* SOCIAL LINKS */
+.social-links i {
+  padding: 10px;
+  font-size: large;
+  color: grey;
+  transition: 0.3s;
+}
+
+.social-links i:hover {
+  transition: 0.3s;
+  transform: scale(1.7);
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    padding: 10px;
+  }
+} ;
