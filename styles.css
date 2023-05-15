@@ -14,8 +14,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   width: 100vw;
-  height: 100vh;
-  position: relative;
+  overflow-x: hidden;
 }
 
 .content h1 {
@@ -31,7 +30,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: var(--dark);
-  padding: 20px 30px;
+  padding: 20px;
   color: white;
 }
 
@@ -64,7 +63,7 @@ footer li::marker {
 }
 
 .content-columns {
-  width: 300px;
+  width: 250px;
   list-style-position: inside;
   margin: 5px;
   padding: 10px;
@@ -129,6 +128,7 @@ footer input[type='button'] {
 .copyright p {
   text-align: center;
   color: lightgray;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 600px) {
