@@ -125,6 +125,12 @@ footer input[type='button'] {
   transform: scale(1.7);
 }
 
+/* COPYRIGHT  */
+.copyright p {
+  text-align: center;
+  color: lightgray;
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     padding: 10px;
