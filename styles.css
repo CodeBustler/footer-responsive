@@ -18,15 +18,12 @@ body {
   position: relative;
 }
 
-h1 {
+.content h1 {
   color: var(--dark);
 }
-p {
-  color: grey;
-}
 
-h1,
-p {
+.content h1,
+.content p {
   margin: 20px;
 }
 
@@ -34,7 +31,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: var(--dark);
-  padding: 20px 60px;
+  padding: 20px 30px;
   color: white;
 }
 
@@ -128,8 +125,13 @@ footer input[type='button'] {
   transform: scale(1.7);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   footer {
     padding: 10px;
+  }
+
+  .content-columns {
+    width: 100%;
+    margin-right: 20px;
   }
 } ;
